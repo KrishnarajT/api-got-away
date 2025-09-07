@@ -1,7 +1,8 @@
 services:
-  fallback-backend:
-    container_name: fallback-backend
+  api-got-away:
+    container_name: api-got-away
+    image: krishnarajt/api-got-away:latest
     ports:
-    - "8000:8000"
+      - "8000:8000"
     environment:
-    - MESSAGE=API Gateway not configured properly
+      - MESSAGE=API Gateway not configured properly
