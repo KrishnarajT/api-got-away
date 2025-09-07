@@ -1,0 +1,7 @@
+services:
+  fallback-backend:
+    container_name: fallback-backend
+    ports:
+    - "8000:8000"
+    environment:
+    - MESSAGE=API Gateway not configured properly
